@@ -29,7 +29,7 @@ WHERE location like '%states%'
 GROUP BY location
 ORDER BY TotalDeathCount desc
 
-/* Count of fatal COVID cases by Country */
+/* Count of fatal COVID cases by Continent */
 
 SELECT location, SUM(cast(new_deaths AS int)) AS TotalDeathCount
 FROM PortfolioProject..CovidDeaths$
